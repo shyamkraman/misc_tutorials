@@ -30,7 +30,7 @@
     
       data("state.fips")
       states <- state.fips$abb
-      trenddat <- data.frame()
+      
       startdate <- "2020-01-31" ## must be in YYYY-MM-DD, change to desired
       enddate <- "2020-03-31" ## must be in YYYY-MM-DD, change to desired
       dates <- paste(startdate, enddate, sep = " ")
@@ -38,6 +38,10 @@
     ## Create vector of keywords (no more than 5, no less than 1)
     
       keywords <- c("these", "are", "keywords")
+      
+    ## Create empty base df
+      
+      trenddat <- data.frame()
     
     ## Loop over states for trends data
       
